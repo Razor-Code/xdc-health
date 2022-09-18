@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useWeb3 } from "@3rdweb/hooks"
-import Dashboard from '../componets/patient/Dashboard/Dashboard'
+import Dashboard from '../components/patient/Dashboard/Dashboard'
 
 
 export default function Home() {

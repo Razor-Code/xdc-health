@@ -1,4 +1,4 @@
-import Dashboard from "../componets/admin/Dashboard/Dashboard";
+import Dashboard from "../components/patient/Dashboard/Dashboard";
 
 export default function test() {
   return (
