@@ -14,7 +14,7 @@ export default function Home() {
      <h1><Dashboard/></h1>
      </>
      ) : (
-        <div onClick= {() => connectWallet('injected')}><h1>connect</h1></div>
+        <div onClick= {() => connectWallet('injected')}><h1 className='bg-gray-200 p-10 px-20 rounded-xl text-black max-w-[400px]'>connect</h1></div>
      )}
     </div>
   )
