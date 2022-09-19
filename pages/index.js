@@ -12,7 +12,7 @@ export default function Home() {
     <div>
     {address ? (
       <>
-     <h1><FlashPage /></h1>
+     <h1><Dialog /></h1>
      </>
      ) : (
         <div onClick= {() => connectWallet('injected')}><h1 className='bg-gray-200 p-10 px-20 rounded-xl text-black max-w-[400px]'>connect</h1></div>
