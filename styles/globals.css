@@ -25,6 +25,6 @@ a {
   }
   body {
     color: white;
-    @apply bg-gray-800;
+    @apply bg-gray-100 text-gray-800 font-medium;
   }
 }
