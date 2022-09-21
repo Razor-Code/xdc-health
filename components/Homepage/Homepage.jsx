@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from "./Homepage.module.scss"
+import Dialogdoctor from "../DialogBox/Dialogdoctor"
+import Dialogpatient from  "../DialogBox/Dialogpatient"
 
 const Homepage = () => {
   return (
@@ -30,11 +32,11 @@ const Homepage = () => {
     </div>
 
     <div className={styles.slide1}>
-    <img className={styles.person} src="./images/patient.png"></img>
+    <div className={styles.person}> <Dialogpatient /></div>
     </div>
 
     <div className={styles.slide1}>
-    <img className={styles.person} src="./images/Admin.png"></img>
+    <div className={styles.person}> <Dialogdoctor /></div>
     </div>
     
     </div>

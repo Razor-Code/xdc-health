@@ -61,8 +61,8 @@ export default function CustomizedDialogs() {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open dialog
+      <Button onClick={handleClickOpen}>
+        <img  src="./images/Admin.png"></img>
       </Button>
       <BootstrapDialog
         onClose={handleClose}

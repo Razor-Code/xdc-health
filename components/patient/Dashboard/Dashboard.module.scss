@@ -7,7 +7,7 @@
 }
 
 .sidebar{
-    width: 15%;
+    width: 13%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,18 +17,21 @@
     font-family: 'ubuntu';
     position: absolute;
     top: 0px;
-    background: #cecdcd;
+    
     box-shadow: 10px 150px 150px rgba(0, 0, 0, 0.05);   
 }
 
 .head{
     color: #000;
     height: 70px;
-    width: 100%;
-    border-bottom: grey solid 1px;
+    width: 85%;
+    margin-left: 240px;
+    border-bottom: grey solid 2px;
     font-size: 20px;
     font-weight: 700px;
+    font-size: 30px;
     display: flex;
+    padding-left: 0px;
     align-items: center;
     justify-content: center;
 }
@@ -60,12 +63,24 @@
 }
 
 .container{
-    height: 98vh;
+    height: 100vh;
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-left: 15%;
     background: #fff;
+}
+
+.button{
+    height: 40px;
+    width: 150px;
+    border: #41B6A6 solid 2px;
+    color: #41B6A6;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
 
 .header{
@@ -93,20 +108,13 @@
     height: 100%;
     background: rgb(238, 238, 238);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 25px;
+
 }
 
-.userdetails{
-    padding: 25px;
-    width: 20%;
-    margin: 15px;
-    height: 40%;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-}
 
 .sub{
     width: 100%;
@@ -125,13 +133,15 @@
 
 
 .userdiv{
-    height: 65%;
-    width: 60%;
+    height: 85vh;
+    width: 85%;
+    margin-left: 250px;
     margin-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
     overflow-y: scroll;
+    
 }
 
 .userdiv::-webkit-scrollbar{
@@ -166,7 +176,7 @@
     margin-bottom: 10px;
     font-size: 25px;
     background: #fff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px #41B6A6;
     border-radius: 5px;
 }
 
