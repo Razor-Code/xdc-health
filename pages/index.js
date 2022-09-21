@@ -6,19 +6,15 @@ import Dashboard from '../components/patient/Dashboard/Dashboard'
 import FlashPage from '../components/flashpage/FlashPage'
 import Dialog from '../components/DialogBox/Dialogdoctor'
 import Patientdetails from '../components/patient/Patientdetails/Patientdetails'
+import Homepage from '../components/Homepage/Homepage'
+import DoctorDashboard from '../components/Doctor/dashboard/dashboard'
 
 export default function Home() {
   const { address, connectWallet } = useWeb3()
   return (
     <div>
-    {address ? (
-      <>
-     <Patientdetails />
-     </>
     
-     ) : (
-        <div onClick= {() => connectWallet('injected')}><h1 className='bg-gray-200 p-10 px-20 rounded-xl text-black max-w-[400px]'>connect</h1></div>
-     )}
+     <DoctorDashboard />
     </div>
   )
 }

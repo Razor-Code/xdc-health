@@ -1,11 +1,16 @@
 import React from 'react'
 import Sidebar from '../../sidebar'
-
 import styles from "./Dashboard.module.scss"
+import { useWeb3 } from "@3rdweb/hooks"
 
 
 const Dashboard = () => {
+
+    const { address, connectWallet } = useWeb3()
   return (
+    <div>
+    {address ? (
+        
         <div className={styles.Body}>
             <div className={styles.sidebar}>
                    <Sidebar  />
@@ -321,14 +326,14 @@ const Dashboard = () => {
             </div>
             </div>
             </div>
-           
-
-           
-
-           
         </div>
         </div>
+
         
+        ) : (
+            <div onClick= {() => connectWallet('injected')}><img className={styles.person} src="./images/patient.png"></img></div>
+        )}
+        </div>
     )
 }
 

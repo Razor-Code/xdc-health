@@ -2,6 +2,10 @@ import React from 'react'
 import styles from "./Homepage.module.scss"
 import Dialogdoctor from "../DialogBox/Dialogdoctor"
 import Dialogpatient from  "../DialogBox/Dialogpatient"
+import Dashboard from "../patient/Dashboard/Dashboard"
+import { useWeb3 } from "@3rdweb/hooks"
+import DoctorDashboard from '../Doctor/dashboard/dashboard'
+
 
 const Homepage = () => {
   return (
@@ -28,15 +32,15 @@ const Homepage = () => {
 
     <div className={styles.slide}>
     <div className={styles.slide1}>
-    <img className={styles.person} src="./images/Doctor1.png"></img>
+    <img className={styles.person} src="./images/patient.png"></img>
     </div>
 
     <div className={styles.slide1}>
-    <div className={styles.person}> <Dialogpatient /></div>
+    <div className={styles.person} > <Dashboard /></div>
     </div>
 
     <div className={styles.slide1}>
-    <div className={styles.person}> <Dialogdoctor /></div>
+    <div className={styles.person} > <DoctorDashboard /> </div>
     </div>
     
     </div>
